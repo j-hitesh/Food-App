@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-Sour-Gummy: Sour-Gummy, sans-serif;
+  --font-Tektur:Tektur, sans-serif;
+  --font-Caveat:Caveat,Cursive;
+  --font-Merienda:Merienda, Cursive;
+  --font-Ga-Maamli:Ga-Maamli, sans-serif;
+  --font-Tinos:Tinos, serif;
+  --font-Fascinate-Inline:Fascinate-Inline, sans-serif;
+}
+       
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
