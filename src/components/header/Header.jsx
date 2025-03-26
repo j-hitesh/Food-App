@@ -2,7 +2,7 @@
 
 const Header = () => {
   return (
-    <div className='bg-red-700  h-120 rounded-md text-white m-10'>
+    <div className='bg-red-700  h-120 rounded-md text-white lg:m-10 mx-5 mt-5'>
       <div>
         <div className="lg:flex lg:justify-between items-center lg:p-8 p-3">
           <div className="xl:text-xl lg:text-lg text-sm">
@@ -19,7 +19,7 @@ const Header = () => {
         </div>
       </div>
     
-        <button className="animate-bounce bg-cyan-200 text-black p-2 rounded-md text-2xl hover:text-red-500 ml-6 mt-4">
+        <button className="animate-bounce bg-cyan-200 text-black p-2 rounded-md text-2xl hover:text-red-500 ml-6 mt-6">
           <a href="#menu" className="text-2xl">View Menu</a>
           </button>
       
