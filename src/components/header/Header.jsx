@@ -4,12 +4,12 @@ const Header = () => {
   return (
     <div className='bg-red-700  h-120 rounded-md text-white m-10'>
       <div>
-        <div className="flex justify-between items-center p-8">
-          <div className="text-xl">
+        <div className="lg:flex lg:justify-between items-center lg:p-8 p-3">
+          <div className="xl:text-xl lg:text-lg text-sm">
             <h2 className="font-Tektur">Are You Starving?</h2>
             <p className="font-Tektur">Within a few clicks, find meals that are accessible near you</p>
           </div>
-          <div className="w-80 pt-7">
+          <div className="lg:w-80 pt-7">
             <video loop autoPlay 
             disablePictureInPicture
             className="rounded-xl">

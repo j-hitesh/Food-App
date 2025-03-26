@@ -8,7 +8,7 @@
 const Footer = () => {
   return (
     <div className=" bg-black "  id='footer'>
-      <div className="flex justify-between mx-12 mt-15 text-white pt-10 font-Fascinate-Inline  ">
+      <div className="flex justify-between mx-12 mt-15 text-white pt-10 font-Fascinate-Inline text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
         <div >
           <h3 className="hover:text-red-700 ">Company</h3>
           <ul >

@@ -12,7 +12,7 @@ const FoodList = ({ category }) => {
   return (
     <div className='mx-11 my-5' id='menu'>
       <h2 className='mt-6 text-4xl font-Ga-Maamli'>Popular Foods</h2>
-      <div className="flex flex-wrap gap-10 pt-12 ">
+      <div className="flex flex-wrap gap-10 pt-12  ">
         {food_list.map((item, index) => {
           if (category === "All" || category === item.category) {
             // console.log(food_list);

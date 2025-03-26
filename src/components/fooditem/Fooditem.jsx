@@ -7,7 +7,7 @@ import { Context } from '../context/Context';
 const Fooditem = ({ id, name, price, description, image }) => {
   const { cartItem, addCart, removeCart } = useContext(Context);
   return (
-    <div className='shadow-xl w-80 transition delay-150 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 '>
+    <div className='shadow-xl xl:w-81 transition delay-150 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 lg:w-69'>
       <div >
         <img className='rounded-t-lg' src={image} alt="img" />
         <div className='p-4 flex align-center gap-x-2 '>
