@@ -5,7 +5,7 @@ import { menu_list } from '../../assets/assets';
 const Menu_list = ({ category, setcategory }) => {
   return (
     <div className='m-10'>
-      <h1 className='my-6 text-4xl font-Ga-Maamli'>What would you like to order</h1>
+      <h1 className='mt-35 mb-10 text-4xl font-Ga-Maamli'>What would you like to order</h1>
       <div className="flex flex-wrap justify-evenly lg:flex lg:flex-row lg:gap-10 lg:justify-center gap-y-5">
         {menu_list.map((item, index) => (
           <div

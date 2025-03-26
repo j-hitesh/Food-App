@@ -1,15 +1,15 @@
 // import './Header.css';
 
-const Header = () => {
+const Headers = () => {
   return (
-    <div className='bg-red-700  h-120 rounded-md text-white lg:m-10 mx-5 mt-5'>
+    <div className='bg-red-700  h-120 rounded-md text-white lg:m-10 mx-5 relative top-25 xl:top-17 sm:top-25'>
       <div>
-        <div className="lg:flex lg:justify-between items-center lg:p-8 p-3">
+        <div className="lg:flex lg:justify-between items-center lg:p-8 p-4 sm:text-xl ">
           <div className="xl:text-xl lg:text-lg text-sm">
             <h2 className="font-Tektur">Are You Starving?</h2>
             <p className="font-Tektur">Within a few clicks, find meals that are accessible near you</p>
           </div>
-          <div className="lg:w-80 pt-7">
+          <div className="lg:w-80 pt-7 sm:w-100 sm:mx-20">
             <video loop autoPlay 
             disablePictureInPicture
             className="rounded-xl">
@@ -27,4 +27,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default Headers;
