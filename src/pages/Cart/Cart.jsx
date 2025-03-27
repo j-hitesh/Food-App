@@ -16,7 +16,7 @@ const Cart = () => {
   }
 
   return (
-    <div className='sm:mx-10 my-30 h-auto'>
+    <div className=' my-30 h-auto'>
       <div className='xl:flex xl:gap-x-30 ' >
         <div >
           {/* <div className="flex justify-between">
@@ -33,13 +33,13 @@ const Cart = () => {
               return (
                 <div key={item._id}>
                   <hr />
-                  <div className="flex justify-between shadow-md shadow-gray-500/50 mb-4 p-4 rounded-md text-xl xl:w-200 ">
+                  <div className="flex justify-between shadow-md shadow-gray-500/50 mb-4 p-4 rounded-md text-xl xl:w-200 sm:mx-10 ">
                     <img className='w-30' src={item.image} alt={item.name} />
                     <p>{item.name}</p>
                     <p className='hidden lg:contents ' >₹{item.price}</p>
                     <p >{cartItem[item._id]}</p>
                     <p>₹{item.price * cartItem[item._id]}</p>
-                    <p className='cursor-pointer ' onClick={() => removeCart(item._id)}><i class="fa-solid fa-trash"></i></p>
+                    <p className='cursor-pointer text-red-700 ' onClick={() => removeCart(item._id)}><i class="fa-solid fa-trash"></i></p>
                   </div>
                   
                 </div>
@@ -48,7 +48,7 @@ const Cart = () => {
             return null;
           })}
         </div>
-        <div className="mt-8 flex ">
+        <div className="mt-8 flex mx-10 ">
           <div className='text-xl w-100 '  >
             <h2 className='text-3xl mb-4 text-red-700'>Cart Totals</h2>
             <div>
