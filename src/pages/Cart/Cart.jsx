@@ -16,7 +16,7 @@ const Cart = () => {
   }
 
   return (
-    <div className='mx-10 my-30 h-auto'>
+    <div className='sm:mx-10 my-30 h-auto'>
       <div className='xl:flex xl:gap-x-30 ' >
         <div >
           {/* <div className="flex justify-between">
