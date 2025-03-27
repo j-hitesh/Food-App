@@ -8,7 +8,7 @@ const Cart = () => {
 
   if (getTotalCartAmount() === 0) {
     return (
-      <div className="text-center text-2xl m-10">
+      <div className="text-center text-2xl mx-10 my-30 h-117 lg:h-211 xl:h-70">
         <h2 className='font-Ga-Maamli'>Your Cart Is Empty</h2>
         <img className='w-90 border-1 border-gray-500 rounded-lg shadow-md shadow-gray-500/50 mx-auto block my-8 '  src="https://cdn.dribbble.com/users/5107895/screenshots/14532312/media/a7e6c2e9333d0989e3a54c95dd8321d7.gif" alt="Empty Cart" />
       </div>
@@ -16,8 +16,8 @@ const Cart = () => {
   }
 
   return (
-    <div className='m-10'>
-      <div className='flex gap-x-30' >
+    <div className='mx-10 my-30 h-auto'>
+      <div className='xl:flex xl:gap-x-30 ' >
         <div >
           {/* <div className="flex justify-between">
             <p>Items</p>
@@ -33,11 +33,11 @@ const Cart = () => {
               return (
                 <div key={item._id}>
                   <hr />
-                  <div className="flex justify-between shadow-md shadow-gray-500/50 mb-4 p-4 rounded-md text-xl w-200">
+                  <div className="flex justify-between shadow-md shadow-gray-500/50 mb-4 p-4 rounded-md text-xl xl:w-200 ">
                     <img className='w-30' src={item.image} alt={item.name} />
                     <p>{item.name}</p>
-                    <p>₹{item.price}</p>
-                    <p>{cartItem[item._id]}</p>
+                    <p className='hidden lg:contents ' >₹{item.price}</p>
+                    <p >{cartItem[item._id]}</p>
                     <p>₹{item.price * cartItem[item._id]}</p>
                     <p className='cursor-pointer ' onClick={() => removeCart(item._id)}><i class="fa-solid fa-trash"></i></p>
                   </div>

@@ -139,7 +139,7 @@ export const food_list = [
         category: "Salad"
     }, {
         _id: "4",
-        name: "Chicken Salad",
+        name: "Chaap Salad",
         image: food_4,
         price: 240,
         description: "Food provides essential nutrients for overall health and well-being",
