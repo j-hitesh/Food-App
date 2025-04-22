@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence:SCAN@-5&display=swap');
 @import "tailwindcss";
 
 
@@ -16,7 +17,22 @@
   --font-Ga-Maamli:Ga-Maamli, sans-serif;
   --font-Tinos:Tinos, serif;
   --font-Fascinate-Inline:Fascinate-Inline, sans-serif;
+  --font-Sixtyfour-Convergence:Sixtyfour-Convergence, sans-serif;
+  
 }
+@layer utilities {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    @apply appearance-none m-0;
+  }
+}
+/* @layer components {
+  .no-spinner::-webkit-inner-spin-button,
+  .no-spinner::-webkit-outer-spin-button {
+    @apply appearance-none m-0;
+  }
+} */
+
        
 html{
   scroll-behavior: smooth;

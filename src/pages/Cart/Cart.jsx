@@ -1,10 +1,13 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 // import './Cart.css';
 import { Context } from '../../components/context/Context';
 import { food_list } from '../../assets/assets';
 
 const Cart = () => {
+  const [showpay, setShowpay] = useState("showpay");
   const { cartItem, removeCart, getTotalCartAmount } = useContext(Context);
+
 
   if (getTotalCartAmount() === 0) {
     return (
@@ -63,15 +66,19 @@ const Cart = () => {
               </div>
               <hr />
               <div className='flex justify-between mb-2' >
-                <b>Total</b>
-                <b>₹{getTotalCartAmount() + 25}</b>
+                <p>Total</p>
+                <p>₹{getTotalCartAmount() + 25}</p>
               </div>
             </div>
-            <button className='cursor-pointer py-3 px-4 text-lg bg-red-700 rounded-xl text-white text-md shadow-xl shadow-gray-500/50 transition-all hover:shadow-lg mt-8  '>Proceed to pay</button>
+            <button className='cursor-pointer py-3 px-4 text-lg bg-red-700 rounded-xl text-white text-md shadow-xl shadow-gray-500/50 transition-all hover:shadow-lg mt-8 ' onClick={() => setShowpay("payment")}>
+              <Link to='/PaymentOption
+              '>Proceed to pay</Link>
+            </button>
           </div>
         </div>
       </div>
     </div>
+    
   );
 }
 

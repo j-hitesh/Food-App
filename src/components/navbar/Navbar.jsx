@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [menu, setMenu] = useState("menu");
   const [showMenuBar, setShowMenuBar] = useState(false);
+  const [showSign, setShowSign] = useState("showSign");
 
 const menushow = () => {
   if (!showMenuBar) {
@@ -46,8 +47,10 @@ const menushow = () => {
       
       
       <div className='flex gap-x-4 fixed right-4 top-3'>
-        <button className='bg-red-500 px-3 py-2 rounded-xl text-xs xl:text-xl hover:text-red-500 hover:bg-blue-400'>Sign-up</button>
-        <button className='bg-red-500 px-3 py-2 rounded-xl text-xs xl:text-xl hover:text-red-500 hover:bg-blue-400'>Log-in</button>
+        <button 
+          onClick={() => setShowSign("login")}
+        className='bg-red-500 px-3 py-2 rounded-xl text-xs xl:text-xl hover:text-red-500 hover:bg-blue-400'><Link to="login">Log-in</Link></button>
+        
       </div>
        
     </div>
