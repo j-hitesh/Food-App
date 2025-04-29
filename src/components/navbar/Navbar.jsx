@@ -4,12 +4,16 @@ import React from 'react';
 // import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
 
+
+
 const Header = () => {
   const [menu, setMenu] = useState("menu");
   const [showMenuBar, setShowMenuBar] = useState(false);
   const [showSign, setShowSign] = useState("showSign");
+ 
+  
 
-const menushow = () => {
+ const menushow = () => {
   if (!showMenuBar) {
     setShowMenuBar(true);
     // console.log(showMenuBar);
@@ -18,8 +22,9 @@ const menushow = () => {
     setShowMenuBar(false);
     // console.log(showMenuBar);
   }
-};
 
+   
+};
 
   return (
     <div className='flex justify-between w-full h-15 sm:h-auto bg-gray-700  text-white px-4 py-4 rounded-b-lg fixed top-0 z-10 mb-10 '>
@@ -50,7 +55,9 @@ const menushow = () => {
         <button 
           onClick={() => setShowSign("login")}
         className='bg-red-500 px-3 py-2 rounded-xl text-xs xl:text-xl hover:text-red-500 hover:bg-blue-400'><Link to="login">Log-in</Link></button>
-        
+        {/* <h5 >
+          {UserName.name}
+        </h5> */}
       </div>
        
     </div>

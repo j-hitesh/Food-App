@@ -7,6 +7,7 @@ import Reviews from './pages/Reviews/Reviews'
 import SignIn from './pages/logIn/SignIn'
 import Sign from './pages/signIn/Sign'
 import PaymentOption from './pages/payment/PaymentOption'
+import User from './pages/user/User'
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
             < Route path='/login' element= {<SignIn/>}></Route>
             <Route path='/signIn' element= {<Sign/>}></Route>
             <Route path='/PaymentOption' element ={<PaymentOption/>} ></Route>
+            <Route path='/User' element={<User/>} ></Route>
           </Routes>
       </div>
       <Footer />
